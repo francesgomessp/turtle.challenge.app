@@ -12,8 +12,8 @@ namespace turtle.challenge.core.utils
     public class ConfigFile
     {
         private static ConfigFile configFile;
-        private string pushFileName = "push";
-        private string mineFieldFileName = "minefieldparams";
+        private string pushFileName = "moves";
+        private string mineFieldFileName = "game-settings";
         private string extensionFileName = "txt";
 
         private ConfigFile() 
@@ -66,7 +66,7 @@ namespace turtle.challenge.core.utils
         private string[] GetTurtleMoves()
         {
             var moveNoEnd = File.ReadAllText($"..\\..\\files\\{pushFileName}{"."}{extensionFileName}");
-            return moveNoEnd.Split(' ');
+            return moveNoEnd.Split(',');
         }
 
         public ConfigMovesDTO LoadMoveSettings()

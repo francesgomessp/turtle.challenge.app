@@ -56,8 +56,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="files\minefieldparams.txt" />
-    <Content Include="files\push.txt" />
+    <Content Include="files\game-settings.txt" />
+    <Content Include="files\moves.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
